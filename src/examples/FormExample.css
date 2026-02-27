@@ -1,0 +1,84 @@
+/* 表单示例：rem 适配，主要用于移动端 */
+.form-example {
+  background: #fff;
+  border-radius: 0.27rem;
+  padding: 0.53rem;
+  box-shadow: 0 0.05rem 0.2rem rgba(0, 0, 0, 0.06);
+}
+
+.form-example-title {
+  font-size: 0.4rem;
+  margin-bottom: 0.13rem;
+  color: #1a1a1a;
+}
+
+.form-example-desc {
+  font-size: 0.24rem;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.form-example-form {
+  margin-top: 0.27rem;
+}
+
+.form-example-actions {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.form-example-actions .ant-btn,
+.form-example-actions .adm-button {
+  min-height: 0.8rem;
+  font-size: 0.32rem;
+}
+
+.form-example-result {
+  margin-top: 0.53rem;
+  padding: 0.4rem;
+  background: #f5f5f5;
+  border-radius: 0.2rem;
+  font-size: 0.24rem;
+}
+
+.form-example-result h3 {
+  font-size: 0.29rem;
+  margin-bottom: 0.2rem;
+}
+
+.form-example-result pre {
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+@media (min-width: 601px) {
+  .form-example {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .form-example-title {
+    font-size: 1.25rem;
+  }
+
+  .form-example-desc {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-example-actions .ant-btn {
+    min-height: 40px;
+    font-size: 14px;
+  }
+
+  .form-example-result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .form-example-result h3 {
+    font-size: 1rem;
+  }
+}

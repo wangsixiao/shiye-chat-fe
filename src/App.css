@@ -1,0 +1,46 @@
+/* 使用 rem 做移动端适配，设计稿 375 宽时 1rem = 10px（根 37.5px 时 1rem = 37.5px，则 0.267rem ≈ 10px） */
+.app {
+  min-height: 100vh;
+  padding: 0.4rem 0.4rem 1.6rem;
+}
+
+.app-header {
+  text-align: center;
+  padding: 0.53rem 0;
+  margin-bottom: 0.53rem;
+}
+
+.app-header h1 {
+  font-size: 0.48rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.app-header .subtitle {
+  font-size: 0.267rem;
+  color: #666;
+  margin-top: 0.13rem;
+}
+
+.app-main {
+  max-width: 10rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 601px) {
+  .app {
+    padding: 1.5rem 2rem 2rem;
+  }
+
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .app-header .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .app-main {
+    max-width: 32rem;
+  }
+}
