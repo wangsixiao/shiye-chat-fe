@@ -1,0 +1,28 @@
+.clear-float {
+ border: 1px solid green;
+ width: 100%;
+}
+
+.clear-float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.float-left {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.float-right {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.clear-both {
+
+}

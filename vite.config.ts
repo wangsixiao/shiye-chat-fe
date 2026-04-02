@@ -9,4 +9,23 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  build: {
+    outDir: 'atts',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          reactVendor: ['react', 'react-dom', 'react-refresh']
+        }
+      }
+    },
+    minify: 'terser',
+    terserOptions: {}
+  },
+  server: {
+    port: 2001,
+    warmup: {
+      clientFiles: ['./src/main.tsx']
+    }
+  }
 })
