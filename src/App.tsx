@@ -22,7 +22,7 @@ function App() {
     <ResponsiveProvider>
       <div className="app">
         <header className="app-header">
-          <h1>MT 响应式组件库示例123</h1>
+          <h1>MT 响应式组件库示例1234</h1>
           <MemoryFun />
           <p className="subtitle">移动端 antd-mobile · PC 端 antd · rem 适配</p>
           <Modal visible={show} mountNode="#modal-test"/>
