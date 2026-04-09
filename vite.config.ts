@@ -4,14 +4,13 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/mt-mobile/',
+  // base: '/mt-mobile/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
   },
   build: {
-    outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
       output: {

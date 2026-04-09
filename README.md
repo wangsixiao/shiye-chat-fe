@@ -1,4 +1,4 @@
-# MT Mobile - 响应式组件库示例
+# MT Mobile - 响应式组件库
 
 React 18 项目：移动端使用 antd-mobile，PC 端使用 antd，并根据视口动态切换；提供 rem 适配与表单示例。
 
