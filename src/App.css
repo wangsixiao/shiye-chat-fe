@@ -1,3 +1,28 @@
+/* 基础重置与 rem 适配由 utils/device 动态设置 html font-size */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 由 initResponsive() 动态设置 font-size，此处为 fallback */
+  font-size: 37.5px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
 /* 使用 rem 做移动端适配，设计稿 375 宽时 1rem = 10px（根 37.5px 时 1rem = 37.5px，则 0.267rem ≈ 10px） */
 .app {
   min-height: 100vh;
