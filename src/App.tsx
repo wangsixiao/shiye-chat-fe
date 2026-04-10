@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
-import Chat from "./Chat";
-import ResumeEdit from "./ResumeEdit";
+import Chat from "./pages/Chat";
+import ResumeEdit from "./pages/ResumeEdit";
 
 function App() {
   return (
